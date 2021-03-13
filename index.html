@@ -8,6 +8,11 @@
     <title>Proyecto con JavaScript</title>
     <!--styles-->
     <link rel="stylesheet" href="styles/styles.css" type="text/css">
+    <!-- slider jquery -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+    <script src="js/slider.js"></script>
 </head>
 
 <body>
@@ -29,7 +34,11 @@
         </header>
 
         <!-- SLIDER -->
-        <div id="slider"></div>
+        <div class="slider">
+            <div><img src="img/hojas.jpg" title="Hojas"></div>
+            <div><img src="img/rojo.jpg" title="Rojo"></div>
+            <div><img src="img/cielo.jpg" title="Cielo"></div>
+        </div>
 
         <!-- CONTENT -->
         <section id="content">
@@ -37,19 +46,48 @@
                 <article class="post">
                     <h2>Titulo del articulo</h2>
                     <span class="date">Fecha de publicacion</span>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi hic ipsum illo et nesciunt assumenda sunt in nihil vel dolorem, dolores repellat, maiores soluta repellendus adipisci cupiditate fugiat. Placeat a aut temporibus dolores
-                        quam eum quos, pariatur officiis, consequatur iure minima atque enim magni itaque, veritatis quia maxime dolor animi!</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi hic ipsum illo et nesciunt
+                        assumenda sunt in nihil vel dolorem, dolores repellat, maiores soluta repellendus adipisci
+                        cupiditate fugiat. Placeat a aut temporibus dolores
+                        quam eum quos, pariatur officiis, consequatur iure minima atque enim magni itaque, veritatis
+                        quia maxime dolor animi!</p>
+                    <a href="#" class="button-more">Leer mas</a>
+                </article>
+                <article class="post">
+                    <h2>Titulo del articulo</h2>
+                    <span class="date">Fecha de publicacion</span>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi hic ipsum illo et nesciunt
+                        assumenda sunt in nihil vel dolorem, dolores repellat, maiores soluta repellendus adipisci
+                        cupiditate fugiat. Placeat a aut temporibus dolores
+                        quam eum quos, pariatur officiis, consequatur iure minima atque enim magni itaque, veritatis
+                        quia maxime dolor animi!</p>
                     <a href="#" class="button-more">Leer mas</a>
                 </article>
             </div>
-            <div class="clearfix"></div>
             <aside id="sidebar">
                 <div id="about">
                     <h4>¿Quien soy?</h4>
                     <img src="img/caracol.jpg" alt="caracol">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit nihil voluptatum consequuntur illo et fuga?</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit nihil voluptatum
+                        consequuntur illo et fuga?</p>
+                </div>
+                <div id="login">
+                    <h4>Identificate</h4>
+                    <form action="">
+                        <label for="name">Nombre</label>
+                        <input type="text" name="name" id="">
+
+                        <label for="email">Email</label>
+                        <input type="email" name="email" id="">
+
+                        <label for="password">Password</label>
+                        <input type="password" name="password" id="">
+
+                        <input type="submit" value="Entrar">
+                    </form>
                 </div>
             </aside>
+            <div class="clearfix"></div>
         </section>
     </section>
 
