@@ -12,7 +12,9 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
-    <script src="js/slider.js"></script>
+    <script src="js/main.js"></script>
+    <!-- moment js -->
+    <script src="js/moment.js"></script>
 </head>
 
 <body>
@@ -43,26 +45,7 @@
         <!-- CONTENT -->
         <section id="content">
             <div id="posts">
-                <article class="post">
-                    <h2>Titulo del articulo</h2>
-                    <span class="date">Fecha de publicacion</span>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi hic ipsum illo et nesciunt
-                        assumenda sunt in nihil vel dolorem, dolores repellat, maiores soluta repellendus adipisci
-                        cupiditate fugiat. Placeat a aut temporibus dolores
-                        quam eum quos, pariatur officiis, consequatur iure minima atque enim magni itaque, veritatis
-                        quia maxime dolor animi!</p>
-                    <a href="#" class="button-more">Leer mas</a>
-                </article>
-                <article class="post">
-                    <h2>Titulo del articulo</h2>
-                    <span class="date">Fecha de publicacion</span>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi hic ipsum illo et nesciunt
-                        assumenda sunt in nihil vel dolorem, dolores repellat, maiores soluta repellendus adipisci
-                        cupiditate fugiat. Placeat a aut temporibus dolores
-                        quam eum quos, pariatur officiis, consequatur iure minima atque enim magni itaque, veritatis
-                        quia maxime dolor animi!</p>
-                    <a href="#" class="button-more">Leer mas</a>
-                </article>
+        <!-- carga posts desde JS -->
             </div>
             <aside id="sidebar">
                 <div id="about">
@@ -75,13 +58,13 @@
                     <h4>Identificate</h4>
                     <form action="">
                         <label for="name">Nombre</label>
-                        <input type="text" name="name" id="">
+                        <input type="text" name="name">
 
                         <label for="email">Email</label>
-                        <input type="email" name="email" id="">
+                        <input type="email" name="email">
 
                         <label for="password">Password</label>
-                        <input type="password" name="password" id="">
+                        <input type="password" name="password">
 
                         <input type="submit" value="Entrar">
                     </form>
