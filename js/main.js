@@ -42,5 +42,13 @@ $(document).ready(function () {
         $("#posts").append(post);
     });
 
+    //scroll to top
+    $('.subir').click((e) => {
+        e.preventDefault();
+        $('html, body').animate({
+            scrollTop: 0
+        }, 500);
+        return false;
+    });
 
 });
