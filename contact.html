@@ -6,15 +6,31 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Proyecto con JavaScript</title>
+
     <!--styles-->
     <link rel="stylesheet" href="styles/styles.css" type="text/css">
-    <!-- slider jquery -->
+    <!-- 
+    slider jquery
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
     <script src="js/main.js"></script>
+
+    moment js
+    <script src="js/moment.js"></script>
+     -->
+
+    <!-- jquery ui -->
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="js/main.js"></script>
+    <!-- styles jquery ui -->
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
     <!-- moment js -->
     <script src="js/moment.js"></script>
+
+    <!-- Plugin validacion -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-form-validator/2.3.26/jquery.form-validator.min.js"></script>
 </head>
 
 <body>
@@ -35,17 +51,29 @@
             </nav>
         </header>
 
-        <!-- SLIDER -->
-        <div class="slider">
-            <div><img src="img/hojas.jpg" title="Hojas"></div>
-            <div><img src="img/rojo.jpg" title="Rojo"></div>
-            <div><img src="img/cielo.jpg" title="Cielo"></div>
-        </div>
 
         <!-- CONTENT -->
         <section id="content">
-            <div id="posts">
-                <!-- carga posts desde JS -->
+            <div id="box">
+                <!-- formilario de contacto -->
+                <form action="" method="POST" id="form_contact">
+                    <label for="name">Nombre</label>
+                    <input type="text" name="name" data-validation="alphanimeric">
+
+                    <label for="surname">Apellido</label>
+                    <input type="text" name="surname" data-validation="alphanimeric">
+
+                    <label for="email">Email</label>
+                    <input type="email" name="email" data-validation="email">
+
+                    <label for="date">Fecha de nacimiento</label>
+                    <input type="text" name="date" data-validation="date" data-validation-format="dd-mm-yy">
+
+                    <label for="years">Edad</label>
+                    <input type="text" name="years" data-validation="number">
+
+                    <input type="submit" value="Enviar">
+                </form>
             </div>
             <aside id="sidebar">
                 <div id="about">
@@ -78,6 +106,8 @@
         Proyecto de JavaScript &copy;
         <a href="#" class="subir">Ir arriba</a>
     </footer>
+
+
 </body>
 
 </html>
